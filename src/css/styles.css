@@ -9,6 +9,7 @@
   --letter-spacing: 0.16rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --trasition: all 0.5s;
 }
 *,
 *::after,
@@ -90,7 +91,7 @@ h4 {
   padding: 0.4rem 0.8rem;
   text-align: center;
   text-transform: capitalize;
-  transition: all 0.3s;
+  transition: var(--trasition);
   white-space: nowrap;
 }
 .btn--primary {
@@ -114,13 +115,18 @@ h4 {
   justify-content: center;
   padding: 2.4rem 3.2rem;
   text-align: center;
-  transition: all 0.3s;
+  transition: var(--trasition);
 }
 .card:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Review Section */
+.review {
+  margin: auto;
+  max-width: 620px;
+  width: 80vw;
+}
 .review__image {
   background: var(--color-primary);
   border-radius: 100%;
@@ -157,8 +163,19 @@ h4 {
 #chevron-right {
   margin: 0 0.7rem;
   cursor: pointer;
+  transition: var(--trasition);
 }
 #chevron-left:hover,
 #chevron-right:hover {
   color: var(--color-primary);
+}
+.title {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+.underline {
+  background: var(--color-primary);
+  height: 0.4rem;
+  margin: auto;
+  width: 8rem;
 }
