@@ -3,6 +3,7 @@
   --color-headings: #102a42;
   --color-text: #617d98;
   --color-body: #f1f5f8;
+  --color-icon: #8bcdfa;
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Open Sans", sans-serif;
   --letter-spacing: 0.16rem;
@@ -54,4 +55,28 @@ h4 {
   body {
     font-size: 1.6rem;
   }
+}
+/* Icons */
+.icon {
+  height: 15px;
+  width: 15px;
+}
+.icon--large {
+  height: 20px;
+  width: 20px;
+}
+.icon--primary {
+  color: #fff;
+}
+.icon--secondary {
+  color: var(--color-icon);
+}
+.icon-container {
+  align-items: center;
+  background: var(--color-primary);
+  border-radius: 100%;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
 }
