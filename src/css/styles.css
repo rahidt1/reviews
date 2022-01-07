@@ -80,3 +80,23 @@ h4 {
   justify-content: center;
   width: 40px;
 }
+/* Buttons */
+.btn {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.btn--primary {
+  background: #ebf7ff;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0.5px 0.5px 0 var(--color-headings);
+  color: var(--color-primary);
+}
+.btn:hover {
+  background: var(--color-primary);
+  color: #063251;
+}
